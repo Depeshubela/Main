@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:textAlignment="center"
+    tools:context=".Navigation">
+
+    <Button
+        android:id="@+id/BTDC"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:enabled="false"
+        android:text="中斷連線"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/Navigation"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/BTC"
+        app:layout_constraintTop_toTopOf="@+id/Navigation" />
+
+    <Button
+        android:id="@+id/Navigation"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:enabled="false"
+        android:text="導航"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/BTDC"
+        tools:layout_editor_absoluteY="10dp" />
+
+    <Button
+        android:id="@+id/BTC"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="連接藍芽"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/BTDC"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/BTDC" />
+
+    <ImageView
+        android:id="@+id/MAP"
+        android:layout_width="372dp"
+        android:layout_height="530dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BTDC"
+        app:srcCompat="@drawable/map" />
+
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="30dp"
+        android:text="確認"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/textInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/MAP" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="121dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MAP">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_goal"
+            android:layout_width="121dp"
+            android:layout_height="40dp"
+            android:hint="請輸入目的地"
+            android:visibility="invisible" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/goal_mark"
+        android:layout_width="29dp"
+        android:layout_height="23dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/goal_mark"
+        tools:layout_editor_absoluteX="-12dp"
+        tools:layout_editor_absoluteY="-9dp" />
+
+    <TextView
+        android:id="@+id/trytext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="620dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/start_mark"
+        android:layout_width="29dp"
+        android:layout_height="23dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/start_mark"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="78dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

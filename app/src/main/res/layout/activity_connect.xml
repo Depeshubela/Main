@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:textAlignment="center"
+    tools:context=".Weather">
+
+    <TextView
+        android:id="@+id/Weak5"
+        android:layout_width="79dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="280dp"
+        android:gravity="center"
+
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/Weak4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Weak4"
+        android:layout_width="79dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="280dp"
+        android:gravity="center"
+
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/Weak1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Weak6"
+        android:layout_width="79dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginEnd="15dp"
+
+        android:gravity="center"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Weak5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/today8"
+        android:layout_width="79dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="165dp"
+        android:gravity="center"
+
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/today9"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/today7"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/today6"
+        android:layout_width="79dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="165dp"
+        android:gravity="center"
+
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/today7"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Weak1"
+        android:layout_width="79dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="236dp"
+        android:gravity="center"
+
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/Weak2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Weak2"
+        android:layout_width="79dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="236dp"
+        android:gravity="center"
+
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/Weak3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Weak1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Weak3"
+        android:layout_width="79dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="236dp"
+        android:layout_marginEnd="15dp"
+
+        android:gravity="center"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Weak2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/today7"
+        android:layout_width="79dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="165dp"
+        android:gravity="center"
+
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/today8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/today6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/today10"
+        android:layout_width="79dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="165dp"
+        android:gravity="center"
+
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/today9"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/today9"
+        android:layout_width="79dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="165dp"
+        android:gravity="center"
+
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/today10"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/today8"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BTDC"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:enabled="false"
+        android:text="中斷連線"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/Navigation"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/BTC"
+        app:layout_constraintTop_toTopOf="@+id/Navigation" />
+
+    <Button
+        android:id="@+id/Navigation"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:enabled="false"
+        android:text="天氣"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/BTDC"
+        tools:layout_editor_absoluteY="10dp" />
+
+    <Button
+        android:id="@+id/BTC"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="連接藍芽"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/BTDC"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/BTDC" />
+
+    <TextView
+        android:id="@+id/today1"
+        android:layout_width="79dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/today2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/today2"
+        android:layout_width="79dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/today3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/today1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/today3"
+        android:layout_width="79dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/today4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/today2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/today4"
+        android:layout_width="79dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/today5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/today3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/today5"
+        android:layout_width="79dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/today4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/todayImage1"
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/today1" />
+
+    <ImageView
+        android:id="@+id/todayImage3"
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/todayImage2"
+        app:layout_constraintTop_toBottomOf="@+id/today3" />
+
+    <ImageView
+        android:id="@+id/todayImage4"
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/todayImage3"
+        app:layout_constraintTop_toBottomOf="@+id/today4" />
+
+    <ImageView
+        android:id="@+id/todayImage5"
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/todayImage4"
+        app:layout_constraintTop_toBottomOf="@+id/today5" />
+
+    <ImageView
+        android:id="@+id/todayImage2"
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/todayImage1"
+        app:layout_constraintTop_toBottomOf="@+id/today2" />
+
+    <ImageView
+        android:id="@+id/todayImage6"
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="42dp"
+        app:layout_constraintEnd_toStartOf="@+id/Weak3"
+        app:layout_constraintStart_toEndOf="@+id/Weak2"
+        app:layout_constraintTop_toBottomOf="@+id/today8" />
+
+    <ImageView
+        android:id="@+id/todayImage7"
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="370dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Weak6"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toEndOf="@+id/Weak5" />
+
+    <TextView
+        android:id="@+id/tryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="50dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Weak5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
